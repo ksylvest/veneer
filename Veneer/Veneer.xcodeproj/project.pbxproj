@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A6E71D815AD4E090069BE02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6E71D715AD4E090069BE02 /* UIKit.framework */; };
+		0AC9C23B15AC1F500002DAF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9C23A15AC1F500002DAF1 /* Foundation.framework */; };
+		0AC9C24915AC1F500002DAF1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9C24815AC1F500002DAF1 /* SenTestingKit.framework */; };
+		0AC9C24C15AC1F500002DAF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9C23A15AC1F500002DAF1 /* Foundation.framework */; };
+		0AC9C24F15AC1F500002DAF1 /* libVeneer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9C23715AC1F500002DAF1 /* libVeneer.a */; };
+		0AC9C25515AC1F500002DAF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AC9C25315AC1F500002DAF1 /* InfoPlist.strings */; };
+		0AC9C25815AC1F500002DAF1 /* VeneerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9C25715AC1F500002DAF1 /* VeneerTests.m */; };
+		0AC9C26315AC1FA00002DAF1 /* KSVeneerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC9C26115AC1FA00002DAF1 /* KSVeneerView.h */; };
+		0AC9C26415AC1FA00002DAF1 /* KSVeneerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9C26215AC1FA00002DAF1 /* KSVeneerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0AC9C24D15AC1F500002DAF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC9C22E15AC1F4F0002DAF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AC9C23615AC1F500002DAF1;
+			remoteInfo = Veneer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A6E71D615AD4D630069BE02 /* KSVeneerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVeneerCell.h; sourceTree = "<group>"; };
+		0A6E71D715AD4E090069BE02 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0AC9C23715AC1F500002DAF1 /* libVeneer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVeneer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC9C23A15AC1F500002DAF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AC9C23E15AC1F500002DAF1 /* Veneer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Veneer-Prefix.pch"; sourceTree = "<group>"; };
+		0AC9C23F15AC1F500002DAF1 /* Veneer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Veneer.h; sourceTree = "<group>"; };
+		0AC9C24715AC1F500002DAF1 /* VeneerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeneerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AC9C24815AC1F500002DAF1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0AC9C25215AC1F500002DAF1 /* VeneerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VeneerTests-Info.plist"; sourceTree = "<group>"; };
+		0AC9C25415AC1F500002DAF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AC9C25615AC1F500002DAF1 /* VeneerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeneerTests.h; sourceTree = "<group>"; };
+		0AC9C25715AC1F500002DAF1 /* VeneerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeneerTests.m; sourceTree = "<group>"; };
+		0AC9C26115AC1FA00002DAF1 /* KSVeneerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVeneerView.h; sourceTree = "<group>"; };
+		0AC9C26215AC1FA00002DAF1 /* KSVeneerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVeneerView.m; sourceTree = "<group>"; };
+		0AC9C26515AC229F0002DAF1 /* KSVeneerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVeneerViewDelegate.h; sourceTree = "<group>"; };
+		0AC9C26615AC22AD0002DAF1 /* KSVeneerViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVeneerViewDataSource.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AC9C23415AC1F500002DAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A6E71D815AD4E090069BE02 /* UIKit.framework in Frameworks */,
+				0AC9C23B15AC1F500002DAF1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC9C24315AC1F500002DAF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC9C24915AC1F500002DAF1 /* SenTestingKit.framework in Frameworks */,
+				0AC9C24C15AC1F500002DAF1 /* Foundation.framework in Frameworks */,
+				0AC9C24F15AC1F500002DAF1 /* libVeneer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AC9C22C15AC1F4F0002DAF1 = {
+			isa = PBXGroup;
+			children = (
+				0AC9C23C15AC1F500002DAF1 /* Veneer */,
+				0AC9C25015AC1F500002DAF1 /* VeneerTests */,
+				0AC9C23915AC1F500002DAF1 /* Frameworks */,
+				0AC9C23815AC1F500002DAF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AC9C23815AC1F500002DAF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AC9C23715AC1F500002DAF1 /* libVeneer.a */,
+				0AC9C24715AC1F500002DAF1 /* VeneerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AC9C23915AC1F500002DAF1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AC9C23A15AC1F500002DAF1 /* Foundation.framework */,
+				0AC9C24815AC1F500002DAF1 /* SenTestingKit.framework */,
+				0A6E71D715AD4E090069BE02 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0AC9C23C15AC1F500002DAF1 /* Veneer */ = {
+			isa = PBXGroup;
+			children = (
+				0AC9C23F15AC1F500002DAF1 /* Veneer.h */,
+				0A6E71D615AD4D630069BE02 /* KSVeneerCell.h */,
+				0AC9C26115AC1FA00002DAF1 /* KSVeneerView.h */,
+				0AC9C26215AC1FA00002DAF1 /* KSVeneerView.m */,
+				0AC9C26515AC229F0002DAF1 /* KSVeneerViewDelegate.h */,
+				0AC9C26615AC22AD0002DAF1 /* KSVeneerViewDataSource.h */,
+				0AC9C23D15AC1F500002DAF1 /* Supporting Files */,
+			);
+			path = Veneer;
+			sourceTree = "<group>";
+		};
+		0AC9C23D15AC1F500002DAF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AC9C23E15AC1F500002DAF1 /* Veneer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AC9C25015AC1F500002DAF1 /* VeneerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AC9C25615AC1F500002DAF1 /* VeneerTests.h */,
+				0AC9C25715AC1F500002DAF1 /* VeneerTests.m */,
+				0AC9C25115AC1F500002DAF1 /* Supporting Files */,
+			);
+			path = VeneerTests;
+			sourceTree = "<group>";
+		};
+		0AC9C25115AC1F500002DAF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AC9C25215AC1F500002DAF1 /* VeneerTests-Info.plist */,
+				0AC9C25315AC1F500002DAF1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AC9C23515AC1F500002DAF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC9C26315AC1FA00002DAF1 /* KSVeneerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0AC9C23615AC1F500002DAF1 /* Veneer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC9C25B15AC1F500002DAF1 /* Build configuration list for PBXNativeTarget "Veneer" */;
+			buildPhases = (
+				0AC9C23315AC1F500002DAF1 /* Sources */,
+				0AC9C23415AC1F500002DAF1 /* Frameworks */,
+				0AC9C23515AC1F500002DAF1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Veneer;
+			productName = Veneer;
+			productReference = 0AC9C23715AC1F500002DAF1 /* libVeneer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		0AC9C24615AC1F500002DAF1 /* VeneerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AC9C25E15AC1F500002DAF1 /* Build configuration list for PBXNativeTarget "VeneerTests" */;
+			buildPhases = (
+				0AC9C24215AC1F500002DAF1 /* Sources */,
+				0AC9C24315AC1F500002DAF1 /* Frameworks */,
+				0AC9C24415AC1F500002DAF1 /* Resources */,
+				0AC9C24515AC1F500002DAF1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AC9C24E15AC1F500002DAF1 /* PBXTargetDependency */,
+			);
+			name = VeneerTests;
+			productName = VeneerTests;
+			productReference = 0AC9C24715AC1F500002DAF1 /* VeneerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AC9C22E15AC1F4F0002DAF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Pose;
+			};
+			buildConfigurationList = 0AC9C23115AC1F4F0002DAF1 /* Build configuration list for PBXProject "Veneer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0AC9C22C15AC1F4F0002DAF1;
+			productRefGroup = 0AC9C23815AC1F500002DAF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AC9C23615AC1F500002DAF1 /* Veneer */,
+				0AC9C24615AC1F500002DAF1 /* VeneerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AC9C24415AC1F500002DAF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC9C25515AC1F500002DAF1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC9C24515AC1F500002DAF1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AC9C23315AC1F500002DAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC9C26415AC1FA00002DAF1 /* KSVeneerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AC9C24215AC1F500002DAF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AC9C25815AC1F500002DAF1 /* VeneerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AC9C24E15AC1F500002DAF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AC9C23615AC1F500002DAF1 /* Veneer */;
+			targetProxy = 0AC9C24D15AC1F500002DAF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0AC9C25315AC1F500002DAF1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AC9C25415AC1F500002DAF1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AC9C25915AC1F500002DAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0AC9C25A15AC1F500002DAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AC9C25C15AC1F500002DAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Veneer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Veneer/Veneer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0AC9C25D15AC1F500002DAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Veneer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Veneer/Veneer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0AC9C25F15AC1F500002DAF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Veneer/Veneer-Prefix.pch";
+				INFOPLIST_FILE = "VeneerTests/VeneerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0AC9C26015AC1F500002DAF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Veneer/Veneer-Prefix.pch";
+				INFOPLIST_FILE = "VeneerTests/VeneerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AC9C23115AC1F4F0002DAF1 /* Build configuration list for PBXProject "Veneer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC9C25915AC1F500002DAF1 /* Debug */,
+				0AC9C25A15AC1F500002DAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AC9C25B15AC1F500002DAF1 /* Build configuration list for PBXNativeTarget "Veneer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC9C25C15AC1F500002DAF1 /* Debug */,
+				0AC9C25D15AC1F500002DAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AC9C25E15AC1F500002DAF1 /* Build configuration list for PBXNativeTarget "VeneerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AC9C25F15AC1F500002DAF1 /* Debug */,
+				0AC9C26015AC1F500002DAF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AC9C22E15AC1F4F0002DAF1 /* Project object */;
+}
