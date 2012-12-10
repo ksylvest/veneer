@@ -16,6 +16,8 @@
 		0AC9C25815AC1F500002DAF1 /* VeneerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9C25715AC1F500002DAF1 /* VeneerTests.m */; };
 		0AC9C26315AC1FA00002DAF1 /* KSVeneerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AC9C26115AC1FA00002DAF1 /* KSVeneerView.h */; };
 		0AC9C26415AC1FA00002DAF1 /* KSVeneerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9C26215AC1FA00002DAF1 /* KSVeneerView.m */; };
+		0AD0F01615C518970043D48F /* KSVeneerData.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD0F01415C518970043D48F /* KSVeneerData.h */; };
+		0AD0F01715C518970043D48F /* KSVeneerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0F01515C518970043D48F /* KSVeneerData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		0AC9C26215AC1FA00002DAF1 /* KSVeneerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVeneerView.m; sourceTree = "<group>"; };
 		0AC9C26515AC229F0002DAF1 /* KSVeneerViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVeneerViewDelegate.h; sourceTree = "<group>"; };
 		0AC9C26615AC22AD0002DAF1 /* KSVeneerViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSVeneerViewDataSource.h; sourceTree = "<group>"; };
+		0AD0F01415C518970043D48F /* KSVeneerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSVeneerData.h; sourceTree = "<group>"; };
+		0AD0F01515C518970043D48F /* KSVeneerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSVeneerData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				0A6E71D615AD4D630069BE02 /* KSVeneerCell.h */,
 				0AC9C26115AC1FA00002DAF1 /* KSVeneerView.h */,
 				0AC9C26215AC1FA00002DAF1 /* KSVeneerView.m */,
+				0AD0F01415C518970043D48F /* KSVeneerData.h */,
+				0AD0F01515C518970043D48F /* KSVeneerData.m */,
 				0AC9C26515AC229F0002DAF1 /* KSVeneerViewDelegate.h */,
 				0AC9C26615AC22AD0002DAF1 /* KSVeneerViewDataSource.h */,
 				0AC9C23D15AC1F500002DAF1 /* Supporting Files */,
@@ -148,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC9C26315AC1FA00002DAF1 /* KSVeneerView.h in Headers */,
+				0AD0F01615C518970043D48F /* KSVeneerData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC9C26415AC1FA00002DAF1 /* KSVeneerView.m in Sources */,
+				0AD0F01715C518970043D48F /* KSVeneerData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -52,6 +52,14 @@
     [super viewDidUnload];
 }
 
+- (void)dealloc
+{
+    self.mainVeneerView.delegate = nil;
+    self.mainVeneerView.source = nil;
+    
+    self.mainVeneerView = nil;
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
 {
     return YES;
@@ -63,7 +71,7 @@
 
 - (CGSize)sizeAtIndexPath:(NSIndexPath *)path forVeneerView:(KSVeneerView *)view
 {
-    return CGSizeMake(512.0, 512.0);
+    return (path.row % 5) ? CGSizeMake(256.0, 256.0) : CGSizeMake(512.0, 512.0);
 }
 
 - (UIView *)viewAtIndexPath:(NSIndexPath *)path forVeneerView:(KSVeneerView *)view

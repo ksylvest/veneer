@@ -7,6 +7,7 @@
 //
 
 #import "KSVeneerView.h"
+#import "KSVeneerData.h"
 
 @interface KSVeneerView ()
 
@@ -16,6 +17,8 @@
 @property (nonatomic, strong) NSMutableDictionary *pools;
 @property (nonatomic, strong) NSMutableDictionary *nibs;
 @property (nonatomic, strong) NSMutableDictionary *klasses;
+
+@property (nonatomic, strong) NSMutableArray *sections;
 
 - (void)queueReusableCell:(UIView *)cell withIdentifier:(NSString *)identifier;
 
@@ -82,8 +85,6 @@
     [self.mainScrollView setShowsVerticalScrollIndicator:NO];
     [self.mainScrollView setShowsHorizontalScrollIndicator:NO];
     [self.mainScrollView setAutoresizingMask:mask];
-        
-    [self.mainScrollView setContentSize:CGSizeMake(2048, 2048)];
     
     [self addSubview:self.mainScrollView];
 }
@@ -226,7 +227,23 @@
 
 - (void)reload
 {
-    [self retile];
+    self.sections = [NSMutableArray array];
+    
+    for (NSInteger i = 0; i < [self.source numberOfSectionsInVeneerView:self]; i++)
+    {
+        NSMutableArray *row = [NSMutableArray array];
+        [self.sections addObject:row];
+        
+        for (NSInteger j = 0; j < [self.source numberOfCellsInSection:i inVeneerView:self]; j++)
+        {
+            KSVeneerData *data = [[KSVeneerData alloc] init];
+            
+            data.path = [NSIndexPath indexPathForRow:i inSection:j];
+            data.size = [self.source sizeAtIndexPath:data.path forVeneerView:self];
+            
+            [row addObject:data];
+        }
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////

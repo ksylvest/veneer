@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KSImageView : UIView
+#import "Veneer.h"
+
+@interface KSImageView : UIView <KSVeneerCell>
 
 @property (weak, nonatomic) IBOutlet UIImageView *shadowImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
 
 @property (nonatomic, weak) UIImage *image;
+
+@property (nonatomic, strong) NSString *identifier;
 
 @end

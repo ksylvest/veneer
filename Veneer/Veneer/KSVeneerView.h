@@ -25,8 +25,8 @@ typedef enum {
 
 @interface KSVeneerView : UIView <UIScrollViewDelegate>
 
-@property (nonatomic, weak) IBOutlet id <KSVeneerViewDelegate> delegate;
-@property (nonatomic, weak) IBOutlet id <KSVeneerViewDataSource> source;
+@property (nonatomic, weak) id <KSVeneerViewDelegate> delegate;
+@property (nonatomic, weak) id <KSVeneerViewDataSource> source;
 
 @property (nonatomic, assign) BOOL editing;
 @property (nonatomic, assign) KSVeneerViewAxis axis;
